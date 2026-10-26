@@ -1,0 +1,9 @@
+﻿rdkit
+pandas
+matplotlib
+numpy==1.26.4
+scikit-learn==1.3.2
+admet-ai
+eskape_model
+streamlit
+plotly

@@ -1,0 +1,27 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+venv/
+env/
+eskape_env/
+.venv/
+
+# Тяжелые папки проекта
+chemio_portable/
+db/
+eskape_repo/
+eskape_output/
+The-ESKAPE-Model-main/
+
+# Пользовательские файлы
+*.log
+*.zip
+*.7z
+*.png
+*.jpg
+
+# IDE
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
