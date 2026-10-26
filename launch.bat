@@ -1,0 +1,19 @@
+@echo off
+chcp 65001 >nul
+title Chemio Profiler
+cd /d "%~dp0"
+if not exist ".\python\python.exe" (
+    echo [??????] Python ?? ??????. ??????????, ????????? ??????? install.bat
+    pause
+    exit /b 1
+)
+echo.
+echo ============================================================
+echo   ?????? CHEMIO PROFILER
+echo ============================================================
+echo   ??????????? ???????: http://localhost:8501
+echo.
+set PYTHONIOENCODING=utf-8
+set PYTHONUTF8=1
+".\python\python.exe" -m streamlit run streamlit_app.py --server.headless=false --server.port=8501 --browser.gatherUsageStats=false
+pause
